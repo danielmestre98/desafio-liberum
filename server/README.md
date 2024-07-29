@@ -2,7 +2,7 @@
 
 ## Configuração do Ambiente
 
-Para rodar o servidor, é necessário copiar o arquivo `.env.example`, renomeá-lo para `.env` e configurar os dados do banco de dados.
+Para rodar o servidor, é necessário copiar o arquivo `.env.example`, renomeá-lo para `.env` e configurar os dados do banco de dados (POSTGRES).
 
 ## Instalação das Dependências
 
