@@ -14,7 +14,7 @@ Execute o comando abaixo para instalar todas as dependências do projeto:
 
 ## Executando o serviço do cliente
 
-Para executar o servidor da API no modo de desenvolvimento, utilize o comando:
+Para executar o servidor da Front End no modo de desenvolvimento, utilize o comando:
 
 ```bash
    npm start
