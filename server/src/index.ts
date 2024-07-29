@@ -3,6 +3,7 @@ import { AppDataSource } from "./data-source"
 import routes from './routes';
 import swaggerUi from 'swagger-ui-express';
 import swaggerSpec from '../swaggerConfig';
+import cors from 'cors';
 // import { User } from "./entity/User"
 
 AppDataSource.initialize().then(async () => {
@@ -11,6 +12,7 @@ AppDataSource.initialize().then(async () => {
 
 const app = express();
 const port = 3001;
+app.use(cors()); // como é apenas um desafio deixei o cors para aceitar tudo
 app.use(express.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use("/api", routes);
