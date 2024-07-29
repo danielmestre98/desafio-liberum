@@ -1,0 +1,19 @@
+.modal-delete{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2f4858;
+    color: #fff !important;
+
+    .close-button{
+        opacity: 0.8;
+        cursor: pointer;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.close{
+    color: #fff;
+    opacity: 1;
+}

@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Layout from "./components/Layout";
 import Register from "./pages/Register/Page";
+import View from "./pages/View/Page";
 
 const App: React.FC = () => {
     return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/cadastro" element={<Register />} />
+                        <Route path="/empresa/:id" element={<View />} />
                     </Routes>
                 </Layout>
             </BrowserRouter>

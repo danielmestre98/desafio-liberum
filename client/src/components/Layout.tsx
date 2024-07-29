@@ -1,3 +1,5 @@
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { ReactNode } from "react";
 import { Container, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -16,8 +18,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                             Portal Administrador
                         </Navbar.Brand>
                         <Navbar.Toggle />
-                        <Navbar.Collapse className="justify-content-end">
+                        <Navbar.Collapse className="d-flex gap-3 justify-content-end">
                             <Navbar.Text className="user-text">Administrador</Navbar.Text>
+                            <img width={40} style={{ borderRadius: "100%" }} src="/default-user-image.png" alt="" />
+                            <FontAwesomeIcon className="user-text" icon={faChevronDown} />
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>

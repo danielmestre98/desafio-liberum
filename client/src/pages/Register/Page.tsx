@@ -107,7 +107,7 @@ const Register: React.FC = () => {
                             <Form.Control
                                 value={formik.values.dataRegistro}
                                 onChange={formik.handleChange}
-                                isInvalid={!!formik.errors.status && formik.touched.dataRegistro}
+                                isInvalid={!!formik.errors.dataRegistro && formik.touched.dataRegistro}
                                 type="date"
                             />
                             <Form.Control.Feedback type="invalid">{formik.errors.dataRegistro}</Form.Control.Feedback>
@@ -116,11 +116,11 @@ const Register: React.FC = () => {
                 </Row>
                 <div className="d-flex w-100 justify-content-end mt-3">
                     <div className="d-flex gap-2">
-                        <Link to="/" className="btn btn-secondary">
+                        <Link to="/" className="btn btn-outline-secondary">
                             Cancelar
                         </Link>
                         <Button type="submit" variant="primary">
-                            Salvar
+                            Adicionar empresa
                         </Button>
                     </div>
                 </div>
