@@ -23,3 +23,7 @@ Para executar o servidor da API no modo de desenvolvimento, utilize o comando:
 ```bash
    npm run dev
 ```
+
+## Documentação
+
+Documentação do swagger se encontra no http://localhost:3001/api-docs
